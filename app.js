@@ -1,7 +1,5 @@
-// Tutorial by http://youtube.com/CodeExplained
 // api key : 82005d27a116c2880c8f0fcb866998a0
 
-// start of the coding 
 const notificationElement = document.querySelector(".notification");
 const iconElement = document.querySelector(".weather-icon");
 const tempElement = document.querySelector(".temperature-value p");
@@ -41,6 +39,7 @@ function showError(error) {
     notificationElement.innerHTML = `<p>${error.message}</p>`;
 }
 
+//assigning values in weather object
 async function getWeather(latitude, longitude) {
     let api = 'https://api.openweathermap.org/data/2.5/weather?lat=' + latitude + '&lon=' + longitude + '&appid=' +
         key + '&units=metric';
@@ -58,6 +57,8 @@ async function getWeather(latitude, longitude) {
     displayWeather();
 }
 
+
+// dynamically displaying them in our html 
 function displayWeather() {
     iconElement.innerHTML = `<img src="icons/${weather.iconId}.png"/>`;
     tempElement.innerHTML = `${weather.temperature.value}°<span>C</span>`;
@@ -65,6 +66,8 @@ function displayWeather() {
     locationElement.innerHTML = `${weather.city}, ${weather.country}`;
 }
 
+
+// celsius to kelvin conversion event 
 tempElement.addEventListener("click", function() {
 
     if (weather.temperature.unit == "celsius") {
