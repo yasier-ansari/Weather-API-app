@@ -23,9 +23,10 @@ After a break of month or so (due to exam) I thought it would be better if i do 
   
   
 # screenshots:
-  (if user permits geolocation prompt)
+
+  (if user permits geolocation prompt) <br>
   <img width="271" alt="image" src="https://user-images.githubusercontent.com/76240365/171340449-e765daa0-f878-46e5-a47b-8f24e8539a5e.png">
   
-  (if user denies the permission)
+  (if user denies the permission) <br>
   <img width="254" alt="image" src="https://user-images.githubusercontent.com/76240365/171340515-0f89de9c-b13e-46d4-a250-3cbe3700cd81.png">
 
